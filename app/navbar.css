@@ -1,0 +1,26 @@
+nav{
+    width: 100%;
+    padding: 8px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li a{
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    outline-offset: 3px;
+    outline: 1px solid white;
+    margin: 10px;
+    transition: padding 0.3s, outline 0.3s, background-color 0.3s, color 0.3s;
+    display: block;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    padding: 8px 16px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    outline: 1px solid rgba(255, 255, 255, 0);
+}

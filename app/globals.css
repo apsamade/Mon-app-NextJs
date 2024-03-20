@@ -7,11 +7,27 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+/* Barre de défilement verticale */
+::-webkit-scrollbar {
+  width: 8px; /* Largeur de la barre de défilement */
+}
 
+::-webkit-scrollbar-track {
+  background: #00000073; /* Couleur de fond de la piste de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c2c2c;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a1a1a; /* Couleur de la poignée de défilement au survol */
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 24, 24, 24;
     --background-end-rgb: 0, 0, 0;
   }
 }
@@ -25,7 +41,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
+*{
+  box-sizing: border-box;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
